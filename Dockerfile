@@ -1,8 +1,6 @@
 ARG IMAGE=intersystemsdc/irishealth-community:latest
 FROM $IMAGE as builder
 
-WORKDIR /home/irisowner/irisdev
-
 RUN --mount=type=bind,src=.,dst=. \
     iris start IRIS && \
 	iris session IRIS < iris.script && \
