@@ -22,7 +22,7 @@
         "askForPassword": false,
         "connectionMethod": "Server and Port",
         "driver": "InterSystems IRIS",
-        "name": "iris-fhir-template",
+        "name": "myyearofhealth",
         "namespace": "FHIRSERVER",
         "password": "SYS",
         "port": 32783,
