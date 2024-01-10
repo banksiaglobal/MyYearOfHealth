@@ -32,5 +32,4 @@ ClassMethod SetupFHIRServer(ns) As %Status
     if 'st write $System.Status.GetErrorText(st)
     quit st
 }
-
 }

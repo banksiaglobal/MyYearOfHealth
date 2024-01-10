@@ -13,15 +13,9 @@ import { CardComponent } from '../../../components/card/card.component';
 export class AuthViewComponent {
   @Input() currentUser: any;
 
-  public titleBox = 'My Year Of Health';
-
-  public titleForm = 'Sign in';
-
-  public titleLink = '';
+  public titleForm = 'Log In';
 
   public instructionAction = '';
 
   @Output() onSignin = new EventEmitter<any>();
-
-  @Output() onGoToOppositeForm = new EventEmitter<Event>();
 }

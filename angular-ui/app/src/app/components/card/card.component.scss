@@ -1,15 +1,7 @@
 .form-card {
-  min-height: 400px;
+  min-height: 200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &-title {
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: var(--accent-color);
-    font-weight: 800;
-  }
+  justify-content: center; 
 
   &__form-title {
     font-size: 20px;

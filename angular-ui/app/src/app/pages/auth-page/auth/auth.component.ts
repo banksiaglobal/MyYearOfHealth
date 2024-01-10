@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { tap, catchError, throwError, Observable } from 'rxjs';
+import { tap, catchError, throwError, Observable, map } from 'rxjs';
 import { IUserAuth } from '../../../share/interfaces/auth';
 import { Router } from '@angular/router';
 import { AuthService } from '../../../share/services/auth.service';
@@ -10,8 +10,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-auth',
   standalone: true,
   imports: [CommonModule, AuthViewComponent],
-  templateUrl: './auth.component.html',
-  styleUrl: './auth.component.scss'
+  templateUrl: './auth.component.html'
 })
 export class AuthComponent {
   constructor(
@@ -22,23 +21,15 @@ export class AuthComponent {
   public currentUser$: Observable<any>;
 
   public onSignin(signinForm: IUserAuth): void {
-    const currentUser$ = this.auth.signIn(signinForm).pipe(
-      tap(() => {}),
-      catchError((error: any) => {
-        return throwError(() => error);
-      })
-    );
-  }
-
-  private goToApp(): void {
-    this.router.navigate(['/sleep']);
-  }
-
-  public onGoToOppositeForm() {
-    this.router.navigate(['/signup']);
-  }
-
-  public onGoToAboutPage() {
-    this.router.navigate(['/about']);
+    console.log(signinForm);
+    // this.currentUser$ = this.auth.signIn(signinForm).pipe(
+    //   map((data) => data),
+    //   catchError((error: any) => {
+    //     tap(() => this.goToApp());
+    //     return throwError(() => error);
+    //   })
+    // );
+    this.auth.signIn(signinForm);
+    this.router.navigate(['/welcome']);
   }
 }

@@ -1,4 +1,13 @@
-.auth-page {
-    align-items: center;
+.top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
+.big-logo {
+  margin-bottom: 25px;
+  background: url('../../../../assets/logo-svg.svg') no-repeat;
+  height: 50px;
+  width: 50px;
+}
