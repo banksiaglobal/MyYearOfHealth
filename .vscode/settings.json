@@ -4,7 +4,7 @@
     "iris.script": "objectscript"
   },
   "objectscript.conn": {
-    "ns": "USER",
+    "ns": "FHIRSERVER",
     "active": true,
     "username": "_SYSTEM",
     "password": "SYS",
@@ -13,7 +13,9 @@
       "internalPort": 52773
     },
     "links": {
-      "FHIR server test": "http://localhost:${port}/fhir/r4/metadata"
+      "FHIR server test": "http://localhost:${port}/fhir/r4/metadata",
+      "Harbour Health App": "http://localhost:4200/",
+      "Swagger UI": "http://localhost:${port}/swagger-ui/index.html?url=http://localhost:32783/api/mgmnt/v1/USER/spec/api"
     },
     "server": "fhir"
   },

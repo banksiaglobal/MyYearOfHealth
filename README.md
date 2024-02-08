@@ -48,14 +48,14 @@ Password: _SYS_
 
 **Create an analysis of our FHIR repo**
 
+!["Create an analysis of our FHIR repo"](/data/image/1.png)
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/1.png' width='800'/>
 
 
 Click on **New** for server connection settings:
 
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/2.png' width='600' height='600'/>
+!["New FHIR Analysis"](/data/image/2.png)
 
 
 FHIR Server Name: _FHIRSERVER_
@@ -65,21 +65,21 @@ FHIR Server Name: _FHIRSERVER_
 - Credentials: _SuperUser_ /  login: _ _SYSTEM_ password: _SYS_ 
 - FHIR repository url : _/fhir/r4_
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/3.png' width='600' height='600' />
+!["New FHIR repository configuration"](/data/image/3.png)
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/4.png' width='600' height='600'/>
+!["New FHIR repository configuration spec"](/data/image/4.png)
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/5.png' width='600' height='400'/>
+!["New Credentials"](/data/image/5.png)
 
 The prepared projection from FHIR to SQL is in the path _data/fhir-builder/Harbour.json_ for **Import**.
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/6.png' width='800'/>
+!["Import transformation"](/data/image/6.png)
 
 After the form appears, we fill it with data:
 Name: _Harbour_
 Analysis: select a newly created analysis from the dropdown list
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/7.png' width='800'/>
+!["Import transformation spec"](/data/image/7.png)
 
 
 
@@ -87,13 +87,13 @@ To move the projection from FHIR to SQL, click **New** and fill the form with da
 
 
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/8.png' width='800'/>
+!["New projection"](/data/image/8.png)
 
 - FHIR Repository: _FHIRSERVER_
 - Trans. Spec: _Harbour_
 - Package Name: _HarbourFHIR_
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/9.png' width='600' height='600' />
+!["New projection spec"](/data/image/9.png)
 
 Сheck the availability of tables in the management portal: 
 
@@ -104,7 +104,7 @@ To move the projection from FHIR to SQL, click **New** and fill the form with da
 
 
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/fhir.png' width='800'/>
+!["SQL Management Portal"](/data/image/fhir.png)
 
 ### Locations
 
@@ -119,10 +119,10 @@ For more efficient and convenient interaction with the application api you can u
 The files with them are located in the project root.
 
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/swagger.png' width='800'/>
+!["Swagger UI"](/data/image/swagger.png)
 
 
-<img src='https://github.com/banksiaglobal/MyYearOfHealth/blob/main/data/image/postman.png' width='800'/>
+!["Postman"](/data/image/postman.png)
 
 
 ### Team
