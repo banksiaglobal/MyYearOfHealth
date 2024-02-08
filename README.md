@@ -36,11 +36,11 @@ docker-compose up -d
 This project has test data for loading into IRIS.
 Preloaded data is available in the following folder : _data/fhir_
 
-### FHIR SQL Builder
+### [FHIR SQL Builder](http://localhost:32783/csp/fhirsql/index.html)
 
 To convert data from FHIR server to SQL server in IRIS:
 
-http://localhost:32783/csp/fhirsql/index.html
+
 
 Data for log in:
 Username: _ _SYSTEM_
@@ -103,15 +103,13 @@ To move the projection from FHIR to SQL, click **New** and fill the form with da
 - HarbourFHIR.Goal
 
 
-
 !["SQL Management Portal"](/data/image/fhir.png)
 
 ### Locations
 
-The application backend is available at http://localhost:32783/ [](http://localhost:32783/)
+The application backend is available at [IRIS Management Portal](http://localhost:32783/csp/sys/%25CSP.Portal.Home.zen)
 
-The application frontend is available at http://localhost:4200/ [](http://localhost:32783/)
-
+The application frontend is available at  [](http://localhost:4200/)
 
 ### Use of API 
 
@@ -121,8 +119,14 @@ The files with them are located in the project root.
 
 !["Swagger UI"](/data/image/swagger.png)
 
+[Swagger UI](http://localhost:32783/swagger-ui/index.html?url=http://localhost:32783/api/mgmnt/v1/USER/spec/api)
 
 !["Postman"](/data/image/postman.png)
+
+[Get user data with all observations and care plans](http://localhost:32783/api/user/4)
+```http
+http://localhost:32783/api/user/4
+```
 
 
 ### Team
